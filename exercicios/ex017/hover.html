@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+
+        div > p{
+            display: none; /*tudo que estiver no parágrafo dentro da div ficará oculto*/
+        }
+
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 180px;
+        }
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando as Hovers</h1>
+    Passe o mouse no parágrafo abaixo
+    <div>
+        Passe aqui.
+        <p>TEXTO ESCONDIDO!</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

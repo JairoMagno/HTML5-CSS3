@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Mídia/game_zelda_icon_183144.ico" type="Zelda.icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Trabalhando com mídias de diferentes tamanhos</h1>
+    <p>Logo abaixo você poderá visualizar mídias que se adaptam ao tamanho do navegador/dispositivo:</p>
+    <picture>
+        <source media="(max-width: 725px)" srcset="imagens/foto-p.png" type="image/png"> <!--Se a imagem for maior que a tela, vá para foto pequena-->
+        <source media="(max-width: 1025px)" srcset="imagens/foto-m.png" type="image/png"> <!--O meio termo entre a imagem grande e a pequena-->
+        <img src="imagens/foto-g.png" alt="Foto Grande"> <!--Por padrão essa será a foto a ser exibida caso possua tamanho o suficiente de dela-->
+    </picture>
+    <hr>
+    <p>Na próxima página, vamos ao site das músicas do <a href="zelda.html" rel="next" target="_self">zelda!</a> </p>
+</body>
+</html>

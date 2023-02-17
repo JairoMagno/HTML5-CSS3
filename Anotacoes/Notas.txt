@@ -1,0 +1,35 @@
+Repositório Público:
+
+- https://github.com/gustavoguanabara/html-css
+- https://gustavoguanabara.github.io/
+
+Conceitos: 
+
+— Internet: junção de servidores globais
+— w.w.w: sub-rede da internet (navegador)
+— HTTP: servidor compatível com o navegador w.w.w, especializado em produzir textos.
+— HTML: linguagem de marcação do HTTP.
+— Bits: zeros ou um
+— byte: sequência de 8 bits, e é a sequência mínima para compor um dado.
+— identificação de dados: ocorre através de código binário, no caso, os bytes (0 e 1)
+— DNS : sistema de cruzamento, que cruza o domínio com o IP correspondente, direcionando o usuário para o mesmo.
+— domínio: máscara do IP.
+— IP: endereço de servidor (dado em forma quantitativa)
+— Roteador/Modem: responsável por modelar os sinais para uma linguagem compreensível para o eletrônico receptor/ou emissor.
+— O modem e o DNS são basicamente os intermediários entre aquilo que você visualiza na Web.
+— KB⁴=1TB
+— 0 > SInal sem frequência | 1> com frequência — a frequência é utilizada pelo seu Modem para diferenciar os elementos e identificar cadacada componente da informação (como, por exemplo, origem e destino).
+— as informações são fragmentadas e percorrem caminhos/rotas diferentes para chegar ao destino, e o Modem do destinatário é responsável por interpretar e rearranjar os fragmentos
+2)
+-Domínio: O nome que identifica algum site. (facebook, instagram ...) (nome único)
+-Hospedagem: Local onde o site estará hospedado.
+-sub domínio: www
+3)
+-HTML: HyperText Markup Language. Linguagem focada em conteúdo (texto, imagens,
+vídeos, tabelas...).
+-CSS: Cascading Style Sheets. Linguegame focada em design (cor, posição, tamanhos...).
+-JavaScript: Linguagem de programação focada na interação (menus, animações, popups, validações...).
+4)
+front-end: Tecnologia que irá rodar para o lado do cliente (client-side)
+back-end: Tecnologia que irá rodar para o lado do servidor (server-side)
+full-stack: Pessoa que se especializa em ambas as tecnologias front-end e back-end.

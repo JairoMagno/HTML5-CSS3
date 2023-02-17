@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            /*Borda de uma caixa. Recebe 4 parâmetros: Top Left, Top Right, Bottom Right, bottom Left. Nessa ordem! */
+            
+        }
+        nav{
+            background-color: gray;
+            padding: 3px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+            /*Horizontal Vertical Espalhamento 
+            É possível fazer a própria sombra pelo
+            inspecionar*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 1px;
+            border-radius: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+     <header> <!--cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--navegação-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+     </header> 
+     <main> <!--Conteúdo principal-->
+        <section id="assuntos"> <!--seções-->
+            <h2>Notícias sobre o Brasil</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, nisi ipsam eveniet vel, unde expedita provident maiores sit laboriosam reiciendis quod inventore corporis ad nihil officiis soluta! Cumque, voluptas magnam.
+            </p>
+        </section>
+        <section id="noticias">
+            <article> <!--artigos-->
+                <aside>
+                    <p>Artigo escrito por mim</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+     </main>
+     <footer> <!--Parte final do site, o pé-->
+        <p>Desenvolvido por Jairo Magno</p>
+     </footer>
+</body>
+</html>
