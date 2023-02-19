@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            text-align: center;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Tabelas</h1>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td colspan="2">B1</td>
+            <!--Colspan faz com que um determinada célula ocupe um valor 'n' de colunas.-->
+        </tr>
+        <tr>
+            <td rowspan="3">A2</td>
+            <!--Rowspan faz com que uma determinada célula ocupe um valor 'n' de linhas-->
+            <td>B2</td>
+            <td rowspan="2">C2</td>
+        </tr>
+        <tr>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td colspan="2">B4</td>
+        </tr>
+    </table>
+</body>
+</html>
