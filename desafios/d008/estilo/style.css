@@ -8,28 +8,36 @@
     margin: 0;
 }
 
+html, body{
+    min-height: 100vh;
+}
+
 header{
     font-family: 'Passion One', cursive, Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: black;
     color: white;
-    padding: 75px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
 }
 
 h1{
-    font-size: 130px;
+    font-size: 10vw;
+    font-variant: small-caps; /*Aumenta as letras maiúsculas*/
+    padding-top: 50px;
 }
 
 p#destaque{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 50px;
 }
 
-#destaque > a{
+a{
     text-decoration: none;
     color: white;
+    font-weight: bolder;
 }
 
-#destaque > a:hover{
+a:hover{
     text-decoration: underline;
 }
 
@@ -37,11 +45,16 @@ main{
     font-family: 'Sriracha', cursive, Arial, Helvetica, sans-serif;
 }
 
-main p{
-    display: block;
-    font-size: 53px;
+div{
+    font-size: 3.5vw;
     line-height: 2em;
-    padding: 50px;
+    padding-left: 60px;
+    padding-top: 10vh;
+    padding-bottom: 10vw;
+}
+
+div > p{
+    padding-bottom: 1.5em;
 }
 
 main > #p2{
@@ -52,11 +65,20 @@ main > #p2{
     background-position: left center;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.473);
 }
 
 #q2, #q4{
     color: white;
-    margin: 1px solid rgba(0, 0, 0, 0);
+    padding-top: 10vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+}
+
+.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.485);
 }
 
 main > #p4{
@@ -67,6 +89,7 @@ main > #p4{
     background-position: left center;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.315);
 }
 
 footer{
@@ -76,13 +99,4 @@ footer{
     font-size: large;
     color: white;
     padding: 20px;
-}
-
-#end{
-    text-decoration: none;
-    color: white;
-}
-
-#end:hover{
-    text-decoration: underline;
 }
