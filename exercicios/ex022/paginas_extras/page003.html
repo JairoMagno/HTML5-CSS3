@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+
+        table{
+            margin: auto;
+            text-align: center;
+            border-collapse: collapse;
+            padding: 50px;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        thead > tr > th { /*Fixa o cabeçalho enquanto estiver rolando a tabela. Não funciona perfeito em todos os navegadores.*/
+            position: sticky;
+            top: -1px;
+            background-color: rgba(0, 0, 0, 0.753);
+        } 
+
+        thead, tfoot{
+            background-color: rgba(0, 0, 0, 0.753);
+            color: white;
+        }
+
+        .nome{
+            text-align: left;
+        }
+
+        .numero{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n){ /*Efeito Zebrado em tabela. Pode também usar o comando par (even) ou ímpar (odd) para dizer qual linha vai alternar*/
+            background-color: lightgray;
+        }
+
+        th, td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES:
+        TABLE
+            CAPTION (Título)
+            THEAD (Cabeçalho)
+                TR, TD, TH (Sempre que for um título, usar TH, sempre que for um dado, usar TD)
+            TBODY (Corpo)
+                TR, TD, TH
+            TFOOT (Pé)
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População</th>
+                <!--Scope informa se os dados que serão exibidos estão na parte da coluna (col) ou na parte da linha (row). Visualmente muda nada, porém o google valoriza no mecanismo de busca (checar dados, etc...).-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1°</td>
+                <td class="nome">São Paulo</td>
+                <td class="numero">46 024 937</td>
+            </tr>
+            <tr>
+                <td>2°</td>
+                <td class="nome">Minas Gerais</td>
+                <td class="numero">20 732 660</td>
+            </tr>
+            <tr>
+                <td>3°</td>
+                <td class="nome">Rio de Janeiro</td>
+                <td class="numero">16 615 526</td>
+            </tr>
+            <tr>
+                <td>4°</td>
+                <td class="nome">Bahia</td>
+                <td class="numero">14 659 023</td>
+            </tr>
+            <tr>
+                <td>5°</td>
+                <td class="nome">Paraná</td>
+                <td class="numero">11 835 379</td>
+            </tr>
+            <tr>
+                <td>6°</td>
+                <td class="nome">Rio Grande do Sul</td>
+                <td class="numero">11 088 065</td>
+            </tr>
+            <tr>
+                <td>7°</td>
+                <td class="nome">Pernambuco</td>
+                <td class="numero">9 051 113</td>
+            </tr>
+            <tr>
+                <td>8°</td>
+                <td class="nome">Ceará</td>
+                <td class="numero">8 936 431</td>
+            </tr>
+            <tr>
+                <td>9°</td>
+                <td class="nome">Pará</td>
+                <td class="numero">8 442 962</td>
+            </tr>
+            <tr>
+                <td>10°</td>
+                <td class="nome">Santa Catarina</td>
+                <td class="numero">7 762 154</td>
+            </tr>
+            <tr>
+                <td>11°</td>
+                <td class="nome">Goiás</td>
+                <td class="numero">6 950 976</td>
+            </tr>
+            <tr>
+                <td>12°</td>
+                <td class="nome">Maranhão</td>
+                <td class="numero">6 800 605</td>
+            </tr>
+            <tr>
+                <td>13°</td>
+                <td class="nome">Espírito Santo</td>
+                <td class="numero">4 108 508</td>
+            </tr>
+            <tr>
+                <td>14°</td>
+                <td class="nome">Paraíba</td>
+                <td class="numero">4 030 961</td>
+            </tr>
+            <tr>
+                <td>15°</td>
+                <td class="nome">Amazonas</td>
+                <td class="numero">3 952 262</td>
+            </tr>
+            <tr>
+                <td>16°</td>
+                <td class="nome">Mato Grosso</td>
+                <td class="numero">3 784 239</td>
+            </tr>
+            <tr>
+                <td>17°</td>
+                <td class="nome">Rio Grande do Norte</td>
+                <td class="numero">3 303 953</td>
+            </tr>
+            <tr>
+                <td>18°</td>
+                <td class="nome">Piauí</td>
+                <td class="numero">3 270 174</td>
+            </tr>
+            <tr>
+                <td>19°</td>
+                <td class="nome">Alagoas</td>
+                <td class="numero">3 125 254</td>
+            </tr>
+            <tr>
+                <td>20°</td>
+                <td class="nome">Distrito Federal</td>
+                <td class="numero">2 923 369</td>
+            </tr>
+            <tr>
+                <td>21°</td>
+                <td class="nome">Mato Grosso do Sul</td>
+                <td class="numero">2 833 742</td>
+            </tr>
+            <tr>
+                <td>22°</td>
+                <td class="nome">Sergipe</td>
+                <td class="numero">2 211 868</td>
+            </tr>
+            <tr>
+                <td>23°</td>
+                <td class="nome">Rondônia</td>
+                <td class="numero">1 616 379</td>
+            </tr>
+            <tr>
+                <td>24°</td>
+                <td class="nome">Tocantins</td>
+                <td class="numero">1 584 306</td>
+            </tr>
+            <tr>
+                <td>25°</td>
+                <td class="nome">Acre</td>
+                <td class="numero">41 262 199 </td>
+            </tr>
+            <tr>
+                <td>26°</td>
+                <td class="nome">Amapá</td>
+                <td class="numero">774 268</td>
+            </tr>
+            <tr>
+                <td>27°</td>
+                <td class="nome">Roraima</td>
+                <td class="numero">634 805</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" class="nome" colspan="2">Soma de habitantes</th>
+                <td class="numero">207 883 699</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolor illo numquam voluptatibus accusamus exercitationem quasi rem voluptatum eum, ullam, a commodi consectetur, similique repellendus recusandae laboriosam nihil explicabo repudiandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo provident, quasi iusto accusantium totam modi itaque qui doloribus reprehenderit, saepe animi sit exercitationem a illo voluptatem dolor blanditiis eligendi veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque aliquam necessitatibus error, delectus expedita voluptatem eos ab excepturi similique exercitationem dolorum vero? Quisquam dicta temporibus illo unde facere ullam!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolor illo numquam voluptatibus accusamus exercitationem quasi rem voluptatum eum, ullam, a commodi consectetur, similique repellendus recusandae laboriosam nihil explicabo repudiandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo provident, quasi iusto accusantium totam modi itaque qui doloribus reprehenderit, saepe animi sit exercitationem a illo voluptatem dolor blanditiis eligendi veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque aliquam necessitatibus error, delectus expedita voluptatem eos ab excepturi similique exercitationem dolorum vero? Quisquam dicta temporibus illo unde facere ullam!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolor illo numquam voluptatibus accusamus exercitationem quasi rem voluptatum eum, ullam, a commodi consectetur, similique repellendus recusandae laboriosam nihil explicabo repudiandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo provident, quasi iusto accusantium totam modi itaque qui doloribus reprehenderit, saepe animi sit exercitationem a illo voluptatem dolor blanditiis eligendi veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque aliquam necessitatibus error, delectus expedita voluptatem eos ab excepturi similique exercitationem dolorum vero? Quisquam dicta temporibus illo unde facere ullam!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolor illo numquam voluptatibus accusamus exercitationem quasi rem voluptatum eum, ullam, a commodi consectetur, similique repellendus recusandae laboriosam nihil explicabo repudiandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo provident, quasi iusto accusantium totam modi itaque qui doloribus reprehenderit, saepe animi sit exercitationem a illo voluptatem dolor blanditiis eligendi veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque aliquam necessitatibus error, delectus expedita voluptatem eos ab excepturi similique exercitationem dolorum vero? Quisquam dicta temporibus illo unde facere ullam!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolor illo numquam voluptatibus accusamus exercitationem quasi rem voluptatum eum, ullam, a commodi consectetur, similique repellendus recusandae laboriosam nihil explicabo repudiandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo provident, quasi iusto accusantium totam modi itaque qui doloribus reprehenderit, saepe animi sit exercitationem a illo voluptatem dolor blanditiis eligendi veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque aliquam necessitatibus error, delectus expedita voluptatem eos ab excepturi similique exercitationem dolorum vero? Quisquam dicta temporibus illo unde facere ullam!</p>
+</body>
+</html>
