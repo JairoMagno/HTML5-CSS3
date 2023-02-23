@@ -12,10 +12,21 @@
     </style>
 </head>
 <body>
+    <!--USE SEMPRE LABELS EM FORMULÁRIOS!
+        relacionar entre qual é o objeto de formulário e qual é sua etiqueta!-->
     <h1>Meu primeiro Formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <!--Os formulários em html estão como padrão o método GET caso não seja especificado. A utlização do GET é mais usada para dados não sensíveis (nome, peso, idade, etc...). Quando o método GET é utilizado, so pode enviar até 3k bytes (Método POST no lugar). Além disso ele não é utilizado para envio de arquivos. Para dados sensíveis, o método POST é o mais adequado (para uma segurança total usa-se com o protocolo https)-->
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <!--autocomplete = off irá retirar a barra de sugestão quando você estiver ditando algo no formulário-->
+        <p><label for="inome">Nome:</label>
+            <!--O parâmetro for recebe o id, para assim ele relacionar a frase com o input do formulário.-->
+            <input type="text" name="nome" id="inome">
+            <!--Utilizar o "i" na frente do nome do id para diferenciar melhor-->
+            <!--O parâmetro name é mais útil para o html e php, já o id é mais útil para o js(inclusive para o uso de labels)-->
+        </p>
+        <p><label for="inome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="sobrenome">
+        </p>
         <!--Input:text significa escrever algum dado em forma de texto-->
         <p><input type="submit" value="Cadastrar"></p>
         <!--Input:submit significa submeter os dados escritos.-->

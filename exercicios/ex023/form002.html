@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--Validações de formulários!!!!!-->
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro02.php" method="POST" autocomplete="on">
+    <p>
+        <label for="iusuario">Usuário: </label>
+        <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="11" placeholder="Nome do usuário" autocomplete="username">
+        <!--O campo required torna obrigatório a informação de algo dentro do formulário para prosseguir! Pode-se usar os parâmetros minlength ou maxlenght para definar o mínimo ou máximo de caracteres.-->
+        <!--O parâmetro placeholder deixa uma frase por cima do formulário (some assim que o usuário interagir com o form)-->
+    </p>
+    <p>
+        <label for="isenha">Senha: </label>
+        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="11" placeholder="senha" autocomplete="current-password">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>

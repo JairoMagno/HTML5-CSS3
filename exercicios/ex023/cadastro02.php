@@ -1,0 +1,1 @@
+Bom dia patrão! Dados recebidos.
