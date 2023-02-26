@@ -9,14 +9,19 @@
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="iemail">Email: </label>
-            <input type="email" name="email" id="iemail" autocomplete="email" required>
-        </p>
-        <p>
-            <label for="inumero">Número de Celular</label>
-            <input type="tel" name="numero" id="inumero" >
-        </p>
+        <fieldset>
+            <!--Fieldset significa agrupamento de dados-->
+            <legend>Dados pessoais:</legend>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="inumero">Número de Celular</label>
+                <input type="tel" name="numero" id="inumero" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+            </p>
+        </fieldset>
+        <!-- Estudar mais sobre RegEx (Regular expressions)-->
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
