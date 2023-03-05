@@ -18,30 +18,30 @@
             <div class="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="cadastro.php" method="post">
-                    <div>
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <div class="campo">
                         <label for="iusuario">
                             <span class="material-icons">
                                 person
                                 </span>
                         </label>
-                        <input type="email" name="usuario" id="iusuario" required placeholder="Digite seu email" class="dados">
+                        <input type="email" name="usuario" id="iusuario" required placeholder="Digite seu email" class="dados" autocomplete="email">
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="isenha">
                             <span class="material-icons">
                                 vpn_key
                                 </span>
                         </label>
-                        <input type="password" name="senha" id="isenha" required placeholder="Digite sua senha" class="dados">
+                        <input type="password" name="senha" id="isenha" required placeholder="Digite sua senha" class="dados" autocomplete="current-password">
                     </div>
                     <div>
-                        <input type="submit" value="Entrar" class="registro" id="entrar">
-                        <input type="submit" value="Esqueci a senha"  class="registro" id="senha">
+                        <input type="submit" value="Entrar" class="registro">
+                        <a href="#" id="senha">Esqueci a senha <span class="material-icons" class="mail">mail</span></a>
                     </div>
+                </form>
             </div>
         </section>
-        </form>
     </main>
 </body>
 </html>

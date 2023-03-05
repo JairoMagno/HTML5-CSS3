@@ -20,6 +20,7 @@ Grandes Telas: acima de 1200px-
 
     section {
         width: 80vw;
+        height: 290px; 
     }
 
     section > .imagem {
@@ -41,7 +42,8 @@ Grandes Telas: acima de 1200px-
     }
 
     section {
-        width: 950px ;
+        width: 950px;
+        height: 350px;
     }
 
     section > .imagem {
@@ -53,6 +55,14 @@ Grandes Telas: acima de 1200px-
     section > .formulario {
         float: left;
         width: 50%;
+    }
+
+    .formulario > h1 {
+        font-size: 2em;
+    }
+
+    .formulario > p {
+        font-size: 1.2em;
     }
 
 }
