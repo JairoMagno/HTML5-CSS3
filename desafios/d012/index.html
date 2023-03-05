@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tela Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="imagem">
+                <!--A imagem será colocado através das CSS's-->
+            </div>
+            <div class="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
+                <form action="cadastro.php" method="post">
+                    <div>
+                        <label for="iusuario">
+                            <span class="material-icons">
+                                person
+                                </span>
+                        </label>
+                        <input type="email" name="usuario" id="iusuario" required placeholder="Digite seu email" class="dados">
+                    </div>
+                    <div>
+                        <label for="isenha">
+                            <span class="material-icons">
+                                vpn_key
+                                </span>
+                        </label>
+                        <input type="password" name="senha" id="isenha" required placeholder="Digite sua senha" class="dados">
+                    </div>
+                    <div>
+                        <input type="submit" value="Entrar" class="registro" id="entrar">
+                        <input type="submit" value="Esqueci a senha"  class="registro" id="senha">
+                    </div>
+            </div>
+        </section>
+        </form>
+    </main>
+</body>
+</html>

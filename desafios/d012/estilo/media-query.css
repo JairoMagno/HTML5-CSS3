@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* Media queries para outros dispositivos além do mobile */
+
+ /* Typical Device Breakpoints fevereiro 2023 (W3C)
+------------------------------
+Pequenas Telas: até 600px;
+Celular: de 600px até 768px;
+Tablet: de 769px até 992px;
+desktop: de 992px até 1200px;
+Grandes Telas: acima de 1200px-
+-------------------------------
+*/
+
+@media screen and (min-width: 768px) {
+    
+}
