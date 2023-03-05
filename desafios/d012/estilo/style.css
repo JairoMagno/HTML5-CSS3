@@ -29,7 +29,6 @@ main {
 
 section {
     position: absolute;
-    width: 70vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -38,18 +37,24 @@ section {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
     border-radius: 20px;
     background-color: white;
+    width: 250px;
+    height: 500px;
+
+    transition: width .3s, height .3s;
 }
 
 .imagem {
+    display: block;
     background-color: white;
     background-image: url('../imagens/pexels-soloman-soh-1492232.jpg');
-    height: 30vh;
+    height: 200px;
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
 }
 
 .formulario {
+    display: block;
     text-align: justify;
     padding: 10px;
 }
@@ -80,14 +85,16 @@ span {
 }
 
 .registro {
-    display: block;
-    width: 60vw;
     padding: 10px;
     background-color: #50ACA2;
     border-radius: 5px;
     border: 2px solid #50ACA2;
     margin: auto;
     margin-bottom: 5px;
+}
+
+.registro:hover {
+    text-decoration: underline;
 }
 
 #entrar {
